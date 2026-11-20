@@ -4,31 +4,30 @@ AulaNexo es una plataforma web ficticia de gestión escolar para la Escuela Secu
 
 ## Documentación de Sprint 0
 
-- [Requerimientos del producto](docs/requirements/product-requirements.md)
-- [Diseño de base de datos](docs/database/database-design.md)
-- [Arquitectura del sistema](docs/architecture/system-architecture.md)
-- [Contrato de API](docs/api/api-contract.md)
+1. [Requerimientos del producto](docs/requirements/product-requirements.md)
+2. [Diseño de base de datos](docs/database/database-design.md)
+3. [Arquitectura del sistema](docs/architecture/system-architecture.md)
+4. [Contrato de API](docs/api/api-contract.md)
 
-## Enfoque
+## Enfoque tecnológico
 
-- Dos frontends que consumen la misma API: Vanilla (HTML/CSS/JavaScript) y React.
+- Dos frontends que consumen la misma API: Vanilla (HTML/CSS/JavaScript) y React + Vite.
 - Backend modular con Node.js y Express.
 - PostgreSQL como base de datos y Sequelize como ORM.
-- Autenticación basada en sesiones de servidor y cookies HTTP.
-- Autorización por roles y comprobación de acceso al recurso.
-- Pruebas unitarias, de integración y end-to-end.
-- Docker Compose para ejecución reproducible.
-- GitHub Actions para integración y entrega continuas.
+- Autenticación mediante sesiones de servidor y cookies HTTP.
+- Autorización por roles y verificación de acceso al recurso.
+- Vitest, Supertest y Playwright para pruebas.
+- Docker Compose y Nginx para ejecución reproducible.
+- GitHub Actions y GHCR para CI/CD y publicación de imágenes.
 
 ## Alcance y datos
 
 AulaNexo es un proyecto demostrativo. Utiliza exclusivamente datos ficticios. Los pagos son simulados; las boletas, constancias y recibos son documentos de demostración y no documentos oficiales. No se integrarán pasarelas bancarias ni servicios gubernamentales en el MVP.
 
-## Estado
+## Estado del proyecto
 
-**Sprint 0 — documentación y definición:** en preparación.  
-Los documentos describen la línea base propuesta; los detalles marcados como decisiones por cerrar deberán validarse antes de iniciar la implementación.
+**Sprint 0 — documentación y definición.** Los documentos establecen la línea base propuesta. Los puntos marcados como decisiones pendientes deberán validarse antes de iniciar la implementación.
 
-## Inicio
+## Orden de lectura
 
-Consulta primero el documento de requerimientos para conocer los objetivos, perfiles, módulos y criterios de aceptación. Después revisa arquitectura, modelo de datos y contrato de API.
+Comienza con los requerimientos para conocer los objetivos, perfiles y funcionalidades. Continúa con arquitectura, modelo de datos y contrato de API. Los cuatro documentos deben evolucionar junto con el código y mantenerse sincronizados mediante Pull Requests.
